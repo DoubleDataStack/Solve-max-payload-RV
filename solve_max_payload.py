@@ -36,14 +36,14 @@ def solve(a, b, dv, *data):
     
 
 def func(x,dv,*args):
-    lenght = args.__len__() // 3
-    if(lenght == 1):
+    length = args.__len__() // 3
+    if(length == 1):
         return args[0] * log((args[1]+x)/(args[2]+x)) - dv
     
-    elif(lenght == 2):
+    elif(length == 2):
         return args[0] * log((args[1]+x)/(args[2]+x)) + args[3] * log((args[4]+x)/(args[5]+x)) - dv
     
-    elif(lenght == 3):
+    elif(length == 3):
         return args[0] * log((args[1]+x)/(args[2]+x)) + args[3] * log((args[4]+x)/(args[5]+x)) + args[6] * log((args[7]+x)/(args[8]+x)) - dv
 
 
